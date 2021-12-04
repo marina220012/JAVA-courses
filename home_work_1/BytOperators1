@@ -1,6 +1,6 @@
 package bytOperators;
 
-public class BytOperators {
+public class BytOperators1 {
        public static void main(String[] args) {
            int a=42, b=15, result;
            result=a&b;
