@@ -1,13 +1,16 @@
 package home_work_2;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class SortUtils2 {
     public static void main(String[] args) {
-        int[] container1 =new int[] {2,3,6,4,1,5};
-        int[] container2 =new int[] {1,1,1,1};
-        int[] container3 =new int[] {9,1,5,99,9,9};
-        whatToDo(container1);
-        whatToDo(container2);
-        whatToDo(container3);
+        Scanner enter=new Scanner(System.in);
+        System.out.println("Введите количество цифр в массиве ");
+        int size=enter.nextInt();
+        int[] container=arrayRandom(size,30);
+        whatToDo(container);
+
     }
 
     public static void whatToDo(int[] arr){
@@ -22,6 +25,18 @@ public class SortUtils2 {
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]+" ");
         }
+    }
+
+    public static int[] arrayRandom(int size, int maxValueExclusion){
+        int[] array = new int[size];
+        Random rnd = new Random();
+        int diff=maxValueExclusion-0;
+        for (int i=0; i<array.length; i++)
+        {
+            array[i]= rnd.nextInt(diff);
+            // System.out.println(array[i]);
+        }
+        return array;
     }
 
     public static int[] shakerSort(int[] arr){
