@@ -36,12 +36,13 @@ public class ArraysUtils2 {
     public static void While(int[] arr){
         int i=0;
         while (i<arr.length){
-            System.out.print(arr[i]+" ");
+            if(i%2!=0){
+            System.out.print(arr[i]+" ");}
             i++;
         }
     }
     public static void For(int[] arr){
-        for (int i=0; i<arr.length; i++) {
+        for (int i=arr.length-1; i>=0; i--) {
             System.out.print(arr[i] + " ");
         }
     }
