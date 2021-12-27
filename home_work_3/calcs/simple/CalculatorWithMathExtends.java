@@ -1,6 +1,6 @@
 package home_work_3.calcs.simple;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator{
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator{
     @Override
     public int absolute(int x) {
         return Math.abs(x);
