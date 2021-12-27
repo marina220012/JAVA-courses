@@ -1,6 +1,6 @@
 package home_work_3.calcs.simple;
 
-public class CalculatorWithOperator {
+public class CalculatorWithOperator implements ICalculator {
     public int add(int x1, int x2) {
         return x1+x2;
     }
