@@ -17,6 +17,9 @@ public class CalculatorWithMathCopy implements ICalculator{
     public double division(int x1, int x2){
         return (x2==0)? 0: x1/x2;
     }
+     public double division(double x1, int x2){
+        return (x2==0)? 0: x1/x2;
+    }
     public double pow(double x, int pow){
         return Math.pow(x,pow);
     }
