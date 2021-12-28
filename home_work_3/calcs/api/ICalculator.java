@@ -7,6 +7,7 @@ public interface ICalculator {
 
     public int multiplication(int x1, int x2);
     public double division(int x1, int x2);
+    public double division(double x1, int x2);
     public double pow(double x, int pow);
     public int absolute(int x);
     public double squareRoot(int x, int pow);
