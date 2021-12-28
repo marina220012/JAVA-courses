@@ -6,7 +6,7 @@ public class CalculatorWithMathCopyMain {
     public static void main(String[] args) {
         CalculatorWithMathCopy number=new CalculatorWithMathCopy();
         double res= number.add(number.add(4.1, number.multiplication(15,7)),
-                number.pow(number.division(28,5), 2));//134.1
+                number.pow(number.division(28.0,5), 2));//140.4599999
         System.out.println("Результат "+res);
     }
 }
