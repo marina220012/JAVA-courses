@@ -62,4 +62,10 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
 
         return super.division(x1, x2);
     }
+    @Override
+    public double division(double x1, int x2) {
+        incrementCountOperation();
+
+        return super.division(x1, x2);
+    }
 }
