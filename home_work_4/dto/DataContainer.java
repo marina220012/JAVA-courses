@@ -93,7 +93,7 @@ public class DataContainer <T>{
     }
 
     public void sort(Comparator<T> comparator) {
-        boolean sorted;
+       
         for (int j = 0; j < data.length-2; j++) {
              for (int i = 0; i < data.length - 1; i++) {
                  if (comparator.compare(data[i], data[i + 1]) > 0) {
