@@ -105,4 +105,36 @@ public class DataContainer <T>{
         }
 
     }
+    
+    public static void sort(DataContainer<? extends Comparable> dataContainer){
+        for (int j = 0; j < dataContainer.data.length-2; j++) {
+            for (int i = 0; i < dataContainer.data.length - 1; i++) {
+                if (dataContainer.data[i].compareTo(dataContainer.data[i+1]) > 0) {
+                    dataContainer.change(dataContainer.data[i], dataContainer.data[i+1]);
+                }
+            }
+        }
+    }
+
+    private void change(Comparable o1, Comparable o2) {
+        Comparable temp=o1;
+        o1=o2;
+        o2=temp;
+    }
+
+    public static void sort(DataContainer<? extends Comparator> container, Comparator<DataContainer> comparator){
+        for (int j = 0; j < container.data.length-2; j++) {
+            for (int i = 0; i < container.data.length - 1; i++) {
+                if (comparator.compare(container.data[i], container.data[i+1]) > 0) {
+                    container.change(container.data[i], container.data[i+1]);
+                }
+            }
+        }
+    }
+
+    private void change(Comparator o1, Comparator o2) {
+        Comparator temp=o1;
+        o1=o2;
+        o2=temp;
+    }
 }
