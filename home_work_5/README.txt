@@ -1,3 +1,5 @@
+Все классы находятся в папке dto
+
 2.1 WarAndPeace1
 2.2 WarAndPeace2
 3 ISearchEngine
